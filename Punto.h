@@ -5,10 +5,10 @@ class Punto
 {
     public:
     Punto();                                             // Constructor por defecto
-    Punto(double n);                                     // Constructor
-    Punto(double v_x, double v_y, double v_z);           // Constructor
+    Punto(const double n);                                     // Constructor
+    Punto(const double v_x,const double v_y,const double v_z);           // Constructor
     Punto(const Punto& p);
-    const Vec operator-(const Punto& p) const;                    // Constructor copia
+     Vec operator-(const Punto& p) const;                    // Constructor copia
     ~Punto();                                            // Destructor
     public:    
     double x, y, z;

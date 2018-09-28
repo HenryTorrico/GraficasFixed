@@ -9,8 +9,9 @@ class Vec
     Vec(double x, double y, double z);
     Vec operator + (const Vec& v) const; 
   
-   // auto operator - (const auto& v) const; 
+    Vec operator - (const Vec& v) const; 
      //Vec operator * (double d) const; 
+     Vec operator*(double t) const; 
      Vec operator / (double d) const;
      double operator*(const Vec& _v) const;
 };
